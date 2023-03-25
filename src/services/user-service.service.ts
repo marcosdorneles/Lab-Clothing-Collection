@@ -11,6 +11,12 @@ export class UserServiceService {
   constructor(private httpClient: HttpClient) { }
 
   getUsers():Observable<User[]>{
-    return this.httpClient.get<User[]>(`${API_PATH}`)
+    return this.httpClient.get<User[]>(`${API_PATH}/usuarios`)
 }
+
+  postUser(usuario: User){
+    return this.httpClient.post<User>(`${API_PATH}/usuarios`, usuario)
+  }
+
+  
 }

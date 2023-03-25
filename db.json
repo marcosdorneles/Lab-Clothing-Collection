@@ -1,4 +1,22 @@
 {
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "emailmarcos@teste.com",
+      "senha": "senhadomarcosteste",
+      "cnpj": "12345678",
+      "empresa": "empresa Ltda.",
+      "nome": "marcos"
+    },
+    {
+      "nome": "teste",
+      "empresa": "teste",
+      "cnpj": "teste",
+      "email": "teste",
+      "senha": "teste",
+      "id": 2
+    }
+  ],
   "modelos": [
     {
       "id": 1,
