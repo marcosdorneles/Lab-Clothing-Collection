@@ -24,7 +24,7 @@ export class CadastroComponent {
       empresa: ['', Validators.required],
       cnpj: ['', [Validators.minLength(14), Validators.maxLength(14), Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      senha: ['', [Validators.minLength(8), Validators.required]]
+      password: ['', [Validators.minLength(8), Validators.required]]
     });
   }
 

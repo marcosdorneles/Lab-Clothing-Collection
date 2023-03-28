@@ -7,12 +7,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CadastroComponent } from 'src/pages/cadastro/cadastro.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from 'src/pages/login/login.component';
+import { AuthGuard } from 'src/security/AuthGuard';
+import { RecuperarSenhaComponent } from 'src/pages/recuperar-senha/recuperar-senha.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastroComponent,
+    LoginComponent,
+    RecuperarSenhaComponent
   
   ],
   imports: [
@@ -23,7 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule
 
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

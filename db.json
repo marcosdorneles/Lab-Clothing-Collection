@@ -3,7 +3,7 @@
     {
       "id": 1,
       "email": "emailmarcos@teste.com",
-      "senha": "senhadomarcosteste",
+      "password": "senhadomarcosteste",
       "cnpj": "12345678",
       "empresa": "empresa Ltda.",
       "nome": "marcos"
@@ -13,7 +13,7 @@
       "empresa": "teste",
       "cnpj": "teste",
       "email": "teste",
-      "senha": "teste",
+      "password": "teste",
       "id": 2
     }
   ],
