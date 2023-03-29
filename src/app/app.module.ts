@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from 'src/pages/login/login.component';
 import { AuthGuard } from 'src/security/AuthGuard';
 import { RecuperarSenhaComponent } from 'src/pages/recuperar-senha/recuperar-senha.component';
+import { DashboardCardComponent } from 'src/components/dashboard-card/dashboard-card.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { RecuperarSenhaComponent } from 'src/pages/recuperar-senha/recuperar-sen
     AppComponent,
     CadastroComponent,
     LoginComponent,
-    RecuperarSenhaComponent
+    RecuperarSenhaComponent,
+    DashboardCardComponent
   
   ],
   imports: [

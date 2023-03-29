@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardCardComponent } from 'src/components/dashboard-card/dashboard-card.component';
 import { CadastroComponent } from 'src/pages/cadastro/cadastro.component';
 import { DashboardComponent } from 'src/pages/dashboard/dashboard.component';
 import { LoginComponent } from 'src/pages/login/login.component';
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path:'cadastro',
     component:CadastroComponent
+  },
+  {
+    path:'dashboardCard',
+    component:DashboardCardComponent
   }
 
 ];
