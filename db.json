@@ -15,6 +15,22 @@
       "email": "teste",
       "password": "teste",
       "id": 2
+    },
+    {
+      "nome": "Marcos",
+      "empresa": "empresa teste",
+      "cnpj": "12345678123456",
+      "email": "marcos@email.com",
+      "password": "",
+      "id": 3
+    },
+    {
+      "nome": "marcos",
+      "empresa": "empresa",
+      "cnpj": "12345678912345",
+      "email": "teste@gmail.com",
+      "password": "teste",
+      "id": 4
     }
   ],
   "modelos": [

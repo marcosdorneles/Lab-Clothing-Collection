@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CadastroComponent } from 'src/pages/cadastro/cadastro.component';
 import { DashboardComponent } from 'src/pages/dashboard/dashboard.component';
 import { LoginComponent } from 'src/pages/login/login.component';
 import { RecuperarSenhaComponent } from 'src/pages/recuperar-senha/recuperar-senha.component';
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path:'forgotPassword',
     component: RecuperarSenhaComponent
+  },
+  {
+    path:'cadastro',
+    component:CadastroComponent
   }
 
 ];

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { User } from 'src/common/iuser';
 import { UserServiceService } from 'src/services/user-service.service';
 
@@ -13,7 +14,8 @@ export class CadastroComponent {
 
   constructor(
     private fb: FormBuilder,
-    private userService: UserServiceService
+    private userService: UserServiceService,
+    private router: Router
   ) {
     this.criaNovoUsuario();
   }
@@ -39,5 +41,9 @@ export class CadastroComponent {
       .catch((err) => console.log(err));
 
     console.log(usuario);
+  }
+
+  goToLogin(){
+    this.router.navigate([''])
   }
 }

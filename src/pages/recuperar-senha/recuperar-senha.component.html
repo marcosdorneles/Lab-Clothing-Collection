@@ -16,23 +16,32 @@
       </svg>
     </div>
     <br />
-    <form >
+    <form [formGroup]="forgotPasswordForm">
       <div class="text-center">
-
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button class="seta" (click)="backToLogin()" >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5 12.0246L20 12.0246" stroke="#304C71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M10.0498 18.049L3.99981 12.025L10.0498 6" stroke="#304C71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            
+        </button>
         <h1>Redefinir Senha</h1>
-        <p>Digite o e-mail associado à sua conta e enviaremos instruções para redefinir sua senha.</p>
+        <div>
+          <p *ngIf="!emailSent" >Digite o e-mail associado à sua conta e enviaremos instruções para redefinir sua senha.</p>
+          <p *ngIf=""></p>
+        </div>
+        
+
       </div>
-      <div class="form-floating">
-        <input type="text" formControlName="nome" placeholder="Informe seu e-mail" />
+
+      <div class="form-floating" *ngIf="!emailSent">
+        <input type="text" formControlName="email" placeholder="Informe seu e-mail" />
         <p *ngIf=""></p>
       </div>
+      
+      <p *ngIf="emailSent">Um link para redefinição de senha foi enviado para o email {{ this.forgotPasswordForm.get('email')?.value }}.</p>
+      
  
-      <button type="submit" class="button">Enviar Recuperação</button>
+      <button type="button" class="button" (click)="sendEmail()">Enviar Recuperação</button>
     </form>
 
   </div>

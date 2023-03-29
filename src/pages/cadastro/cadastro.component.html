@@ -74,7 +74,7 @@
     <div class="form-floating">
       <input
         type="password"
-        formControlName="senha"
+        formControlName="password"
         placeholder="Senha (mínimo 8 caracteres)"
       />
     </div>
@@ -91,6 +91,6 @@
 
   <br />
   <div class="router">
-    <p>Já possui uma conta? Realizar login</p>
+    <p>Já possui uma conta? <button class="router" (click)="goToLogin()"> Realizar login</button></p>
   </div>
 </div>

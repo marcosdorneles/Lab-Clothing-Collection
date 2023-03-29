@@ -38,7 +38,7 @@
       </div>
 
       <div class="form-floating">
-        <input type="text" formControlName="password" placeholder="informe sua senha" />
+        <input type="password" formControlName="password" placeholder="informe sua senha" />
       </div>
       <div
         *ngIf="
@@ -47,16 +47,16 @@
             loginUser.get('password')?.dirty)
         "
       >
-        <p style="color: red">Informe uma empresa válida!</p>
+        <p style="color: red">Informe uma senha válida!</p>
       </div>
       
-      <button type="submit" class="criar">Criar conta</button>
+      <button type="submit" class="criar">Entrar</button>
     </form>
   
     <br />
-    <div class="router">
-      <p>Esqueceu sua senha? Redefina sua senha</p>
-      <p>Ainda não tem uma conta? Cadastre-se</p>
+    <div>
+      <p>Esqueceu sua senha? <button class="router" (click)="goToForgotPassword()">  Redefina sua senha</button></p>
+      <p>Ainda não tem uma conta? <button class="router" (click)="goToCadastro()">Cadastre-se</button></p>
     </div>
   </div>
   

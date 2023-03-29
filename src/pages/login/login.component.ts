@@ -97,6 +97,14 @@ export class LoginComponent {
     }
   }
 
+  goToCadastro(){
+    this.router.navigate(['cadastro'])
+  }
+
+  goToForgotPassword(){
+    this.router.navigate(['forgotPassword'])
+  }
+
   constructor(
     private router: Router,
     private service: UserServiceService
