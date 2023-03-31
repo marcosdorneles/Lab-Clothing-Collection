@@ -11,6 +11,9 @@ import { LoginComponent } from 'src/pages/login/login.component';
 import { AuthGuard } from 'src/security/AuthGuard';
 import { RecuperarSenhaComponent } from 'src/pages/recuperar-senha/recuperar-senha.component';
 import { DashboardCardComponent } from 'src/components/dashboard-card/dashboard-card.component';
+import { HeaderComponent } from 'src/components/header/header.component';
+import { DashboardComponent } from 'src/pages/dashboard/dashboard.component';
+import { SideMenuComponent } from 'src/components/side-menu/side-menu.component'
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { DashboardCardComponent } from 'src/components/dashboard-card/dashboard-
     CadastroComponent,
     LoginComponent,
     RecuperarSenhaComponent,
-    DashboardCardComponent
+    DashboardCardComponent,
+    HeaderComponent,
+    DashboardComponent,
+    SideMenuComponent
   
   ],
   imports: [

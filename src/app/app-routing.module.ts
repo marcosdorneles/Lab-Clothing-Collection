@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardCardComponent } from 'src/components/dashboard-card/dashboard-card.component';
+import { HeaderComponent } from 'src/components/header/header.component';
+import { SideMenuComponent } from 'src/components/side-menu/side-menu.component';
 import { CadastroComponent } from 'src/pages/cadastro/cadastro.component';
 import { DashboardComponent } from 'src/pages/dashboard/dashboard.component';
 import { LoginComponent } from 'src/pages/login/login.component';
@@ -27,6 +29,14 @@ const routes: Routes = [
   {
     path:'dashboardCard',
     component:DashboardCardComponent
+  },
+  {
+    path:'sideMenu',
+    component:SideMenuComponent
+  },
+  {
+    path:'header',
+    component:HeaderComponent
   }
 
 ];

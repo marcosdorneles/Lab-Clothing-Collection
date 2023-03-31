@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-menu',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class SideMenuComponent {
 
+
+  goToDashboard(){
+    this.route.navigate(['/dashboard'])
+  }
+
+  goToColecoes(){
+    this.route.navigate(['/colecoes'])
+  }
+
+  goToModelos(){
+    this.route.navigate(['/modelos'])
+  }
+  constructor(private route: Router){}
 }

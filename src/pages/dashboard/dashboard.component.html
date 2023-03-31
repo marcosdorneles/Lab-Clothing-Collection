@@ -1,1 +1,32 @@
-<p>dashboard works!</p>
+
+<app-header></app-header>
+<div class="conteiner" style="display: flex;">
+  <app-side-menu></app-side-menu>
+  <div class="main-content" style="display: flex; flex-direction: column;"> <!--
+    essa div acopla o card e a tabela
+    agora voce tem uma caixa que tem 2 elementos
+      - 1 caixinha (a dashboard)
+      - 1 tabela
+  -->
+    <div class="cards" style="display: flex; flex-wrap: nowrap; justify-content: space-around;">
+      <h1 class="title">Dashboard</h1>
+      <app-dashboard-card></app-dashboard-card>
+    </div>
+    <table class="table table-hover table-sm" style="margin-top: 15px;">
+      <thead>
+        <tr>
+          <th scope="col">Coleção</th>
+          <th scope="col">Responsável</th>
+          <th scope="col">Orçamento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let colecao of colecoes">
+          <td class="text-sm">{{ colecao.marca }}</td>
+          <td class="text-sm">{{ colecao.responsavel }}</td>
+          <td class="text-sm">{{ colecao.orcamento }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
