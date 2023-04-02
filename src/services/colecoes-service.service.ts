@@ -9,6 +9,7 @@ import { map, Observable } from 'rxjs';
 })
 export class ColecoesServiceService {
 
+  
   getColecoes():Observable<Colecoes[]>{
     return this.httpClient.get<Colecoes[]>(`${API_PATH}/colecoes`)
   }
@@ -21,19 +22,13 @@ export class ColecoesServiceService {
     return this.httpClient.post<Colecoes>(`${API_PATH}/colecoes`,colecao)
   }
 
-  atualizarColecao(modelo:Colecoes):Observable<any>{
-    return this.httpClient.put<any>(`${API_PATH}/colecoes/${modelo.id}`, modelo)
+  atualizarColecao(colecao:Colecoes):Observable<any>{
+    return this.httpClient.put<any>(`${API_PATH}/colecoes/${colecao.id}`, colecao)
   }
 
   deleteColecao(id:number):Observable<any>{
     return this.httpClient.delete<any>(`${API_PATH}/colecoes/${id}`)
   }
 
-  getTotalOrcamento(): Observable<number> {
-    return this.httpClient.get<Colecoes[]>(`${API_PATH}/colecoes`)
-      .pipe(
-        map((colecoes: any[]) => colecoes.reduce((total, colecao) => total + colecao.orcamento, 0))
-      );
-  }
   constructor(private httpClient: HttpClient) { }
 }

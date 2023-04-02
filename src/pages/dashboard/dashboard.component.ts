@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ColecoesServiceService } from 'src/services/colecoes-service.service';
 import { Colecoes } from 'src/common/icolecoes';
+import { Router } from '@angular/router';
 
 
 
@@ -14,7 +15,6 @@ export class DashboardComponent {
   colecoes!: Colecoes[];
 
   ngOnInit(): void {
-    this.listarColecoes();
   }
 
   listarColecoes() {
@@ -23,5 +23,18 @@ export class DashboardComponent {
     });
   }
 
-  constructor(private service: ColecoesServiceService){}
+  goToDashboard(){
+    this.route.navigate(['dashboard'])
+  }
+
+  goToColecoes(){
+    this.route.navigate(['colecoes'])
+  }
+
+  goToModelos(){
+    this.route.navigate(['modelos'])
+  }
+
+
+  constructor(private service: ColecoesServiceService, private route: Router){}
 }

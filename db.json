@@ -55,17 +55,62 @@
       "nome": "Coleção 2"
     },
     {
-      "id":3,
+      "id": 3,
       "nome": "coleção 3"
     },
     {
-      "id":4,
-      "nome":"string",
-      "responsavel":"string",
-      "estacao":"string",
-      "marca":"string",
-      "orcamento":500,
-      "anoLancamento":"string"
+      "id": 4,
+      "nome": "string",
+      "responsavel": "string",
+      "estacao": "string",
+      "marca": "string",
+      "orcamento": 500,
+      "anoLancamento": "string"
+    },
+    {
+      "id": 5,
+      "nome": "string",
+      "responsavel": "string",
+      "estacao": "string",
+      "marca": "string",
+      "orcamento": 500,
+      "anoLancamento": "string"
+    },
+    {
+      "id": 6,
+      "nome": "string",
+      "responsavel": "string",
+      "estacao": "string",
+      "marca": "string",
+      "orcamento": 500,
+      "anoLancamento": "string"
+    },
+    {
+      "nome": "",
+      "estacao": "",
+      "orcamento": "",
+      "responsavel": "",
+      "marca": "",
+      "anoLancamento": "",
+      "id": 7
+    },
+    {
+      "nome": "",
+      "estacao": "",
+      "orcamento": "",
+      "responsavel": "",
+      "marca": "",
+      "anoLancamento": "",
+      "id": 8
+    },
+    {
+      "nome": "coleção teste",
+      "estacao": "verão",
+      "orcamento": "15.000",
+      "responsavel": "Marcos",
+      "marca": "Nike",
+      "anoLancamento": "2023",
+      "id": 9
     }
   ]
 }

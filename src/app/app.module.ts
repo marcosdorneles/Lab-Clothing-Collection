@@ -14,6 +14,8 @@ import { DashboardCardComponent } from 'src/components/dashboard-card/dashboard-
 import { HeaderComponent } from 'src/components/header/header.component';
 import { DashboardComponent } from 'src/pages/dashboard/dashboard.component';
 import { SideMenuComponent } from 'src/components/side-menu/side-menu.component'
+import { ColecoesComponent } from 'src/pages/colecoes/colecoes.component';
+import { CriarColecoesComponent } from 'src/pages/criar-colecoes/criar-colecoes.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { SideMenuComponent } from 'src/components/side-menu/side-menu.component'
     DashboardCardComponent,
     HeaderComponent,
     DashboardComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    ColecoesComponent,
+    CriarColecoesComponent
   
   ],
   imports: [

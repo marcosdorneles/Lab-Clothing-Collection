@@ -21,12 +21,12 @@ export class DashboardCardComponent {
   }
 
   ngOnInit() {
-    this.service.getModelos().subscribe((data: any[]) => {
+    this.colecaoService.getColecoes().subscribe((data: any[]) => {
       this.data = data;
       this.numModelos = data.length;
     });
     
-    this.colecaoService.getColecoes().subscribe((data: any[]) =>{
+    this.service.getModelos().subscribe((data: any[]) =>{
       this.data = data
       this.numColecoes = data.length
     })
