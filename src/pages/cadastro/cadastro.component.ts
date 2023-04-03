@@ -36,7 +36,7 @@ export class CadastroComponent {
       .postUser(usuario)
       .toPromise()
       .then(() => {
-        console.log('criado');
+        window.alert(`Usuário ${usuario.nome} criado com sucesso!`)
       })
       .catch((err) => console.log(err));
 

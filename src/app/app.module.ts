@@ -16,6 +16,8 @@ import { DashboardComponent } from 'src/pages/dashboard/dashboard.component';
 import { SideMenuComponent } from 'src/components/side-menu/side-menu.component'
 import { ColecoesComponent } from 'src/pages/colecoes/colecoes.component';
 import { CriarColecoesComponent } from 'src/pages/criar-colecoes/criar-colecoes.component';
+import { ModelosComponent } from 'src/pages/modelos/modelos.component';
+import { CriarModelosComponent } from 'src/pages/criar-modelos/criar-modelos.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { CriarColecoesComponent } from 'src/pages/criar-colecoes/criar-colecoes.
     DashboardComponent,
     SideMenuComponent,
     ColecoesComponent,
-    CriarColecoesComponent
+    CriarColecoesComponent,
+    ModelosComponent,
+    CriarModelosComponent
   
   ],
   imports: [

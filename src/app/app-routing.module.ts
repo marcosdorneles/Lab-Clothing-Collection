@@ -6,8 +6,10 @@ import { SideMenuComponent } from 'src/components/side-menu/side-menu.component'
 import { CadastroComponent } from 'src/pages/cadastro/cadastro.component';
 import { ColecoesComponent } from 'src/pages/colecoes/colecoes.component';
 import { CriarColecoesComponent } from 'src/pages/criar-colecoes/criar-colecoes.component';
+import { CriarModelosComponent } from 'src/pages/criar-modelos/criar-modelos.component';
 import { DashboardComponent } from 'src/pages/dashboard/dashboard.component';
 import { LoginComponent } from 'src/pages/login/login.component';
+import { ModelosComponent } from 'src/pages/modelos/modelos.component';
 import { RecuperarSenhaComponent } from 'src/pages/recuperar-senha/recuperar-senha.component';
 import { AuthGuard } from 'src/security/AuthGuard';
 
@@ -47,6 +49,14 @@ const routes: Routes = [
   {
     path:'criarColecoes',
     component:CriarColecoesComponent
+  },
+  {
+    path:'modelos',
+    component:ModelosComponent
+  },
+  {
+    path:'criarModelos',
+    component:CriarModelosComponent
   }
 
 ];

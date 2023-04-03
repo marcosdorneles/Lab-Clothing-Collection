@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ColecoesServiceService } from 'src/services/colecoes-service.service';
-import { Colecoes, Icolecoes } from 'src/common/icolecoes';
+import { Colecoes } from 'src/common/icolecoes';
 
 @Component({
   selector: 'app-criar-colecoes',

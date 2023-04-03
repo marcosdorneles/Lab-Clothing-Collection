@@ -40,9 +40,19 @@
     order: 0;
     flex-grow: 0;
   }
-  .card-body{
-   
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   position: absolute;
+   margin-left: 200px;
+    margin-right: 10px;
+    justify-items: center;
+    align-items: center;
+    width: 10px;
+    height: 50px;
   }
+  
 
 
   

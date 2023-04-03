@@ -1,26 +1,20 @@
 export interface Imodelos {
     id?:number;
-    bermuda:boolean
-    biquini:boolean
-    bolsa:boolean
-    bone:boolean
-    calca:boolean
-    calcados:boolean
-    camisa:boolean
-    chapeu:boolean
-    saia:boolean
+    nome:string;
+    colecao:string;
+    bordado:string;
+    tipo:string
+    responsavel:string;
+    estampa:string
 }
 
 export class Modelos implements Imodelos{
 
-    id?:number;
-    bermuda!:boolean
-    biquini!:boolean
-    bolsa!:boolean
-    bone!:boolean
-    calca!:boolean
-    calcados!:boolean
-    camisa!:boolean
-    chapeu!:boolean
-    saia!:boolean
+    id?: number | undefined;
+    nome!: string;
+    colecao!: string;
+    bordado!: string;
+    tipo!: string;
+    responsavel!: string;
+    estampa!: string;
 }
