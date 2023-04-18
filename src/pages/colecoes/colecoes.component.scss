@@ -1,61 +1,25 @@
-.conteiner{
-    /* Auto layout */
-    margin-top: 15px;
-    margin-left: 300px;
-        // background: #F9F9F9;
-}  
-
-button{
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font-size: inherit;
-    font-family: inherit;
-    color: inherit;
-    cursor: pointer;
-    text-align: left;
-    width: 293px;
-    height: 40px;
-    left: 94px;
-    top: 94px;
-    font-family: 'Inter';
-    color: #B4B6C1;
+.conteiner {
+  margin-top: 15px;
+  margin-left: 300px;
 }
 
-.main-content{
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 30px;
-    gap: 10px;
-    width: 1000px;
-    height: 672px;
-    background: #FFFFFF;
-    border-radius: 9px;
-    /* Inside auto layout */
-
+button {
+  background: none;
+  border: none;
 }
 
-tr,td, th{
-    justify-content: space-between;
-    width: 10px;
-    margin-right: 1px;
+.main-content {
+  padding: 30px;
+  width: 1000px;
+  height: 672px;
 }
 
-.div-container-fluid{
-  position: absolute;
-}
-
-.container-fluid{
-  position: absolute;
-  background-color: red;
-}
-
-.row{
-  position: absolute;
-  margin: 1px 1px 1px 1px;
+tr,
+td,
+th {
+  justify-content: space-between;
+  width: 10px;
+  margin-right: 1px;
 }
 
 .wrapper {
@@ -63,15 +27,15 @@ tr,td, th{
   align-items: center;
 }
 
-.title, button {
-  display: inline-block;
-}
-
 .title {
   margin-right: 600px;
 }
 
-.table{
+.table {
   padding-right: 30px;
   width: 800px;
+}
+
+tr:hover {
+  background-color: #b4b6c1;
 }

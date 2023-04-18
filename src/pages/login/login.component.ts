@@ -25,7 +25,7 @@ export class LoginComponent {
   createForm(user: User) {
     this.loginUser = new FormGroup({
       email: new FormControl(user.email, [Validators.required]),
-      password: new FormControl(user.password, [Validators.required]),
+      senha: new FormControl(user.senha, [Validators.required]),
     });
   }
 
@@ -40,8 +40,8 @@ export class LoginComponent {
   get email() {
     return this.loginUser.get('email');
   }
-  get password() {
-    return this.loginUser.get('password');
+  get senha() {
+    return this.loginUser.get('senha');
   }
 
   findUser() {
@@ -64,15 +64,15 @@ export class LoginComponent {
   }
 
   correctPassword() {
-    if (this.password!.value === null) {
-      this.password!.setErrors({ required: true });
-      this.password!.markAsTouched();
+    if (this.senha!.value === null) {
+      this.senha!.setErrors({ required: true });
+      this.senha!.markAsTouched();
     } else {
-      if (this.user.password === this.password!.value) {
+      if (this.user.senha === this.senha!.value) {
         return true;
       } else {
-        this.password!.setErrors({ invalid: true });
-        this.password!.markAsTouched();
+        this.senha!.setErrors({ invalid: true });
+        this.senha!.markAsTouched();
         return false;
       }
     }
@@ -88,12 +88,14 @@ export class LoginComponent {
     if (this.findUser() ) {
       if (this.correctPassword()) {
         this.createLocalStorage(true);
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['dashboard']);
       } else {
         this.createLocalStorage(false);
+        window.alert("erro")
       }
     } else {
       this.createLocalStorage(false);
+      window.alert("erro")
     }
   }
 
@@ -113,6 +115,6 @@ export class LoginComponent {
   ngOnInit(): void {
     this.getUsersList();
     this.createForm(new User());
-    
+    // this.createLocalStorage(false)
   }
 }

@@ -1,145 +1,44 @@
-.conteiner{
+.container{
   /* Auto layout */
   margin-top: 15px;
-  margin-left: 300px;
-  
-      // background: #F9F9F9;
+  margin-left: 246px;
 }  
-
-.row {
-display: flex;
-flex-direction: column;
-align-items: left;
-padding: 51px 40px;
-gap: 40px;
-position: absolute;
-width: 250px;
-height: 100vh;
-background: #ffffff;
-border-right: 2.5px solid #f0f0f0;
-}
-
-.menu-titulo {
-width: 300px;
-height: 17px;
-font-family: "Inter";
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-margin-top: 50px;
-margin-bottom: 30px;
-display: flex;
-align-items: center;
-//   color: #b4b6c1;
-}
-
-.nav-item {
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px 20px;
-gap: 10px;
-width: 200px;
-height: 50px;
-border-radius: 7px;
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-overflow: hidden;
-}
-
-.nav-item:hover {
-color: white;
-background: #4c68ff;
-overflow: hidden;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-button{
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  font-size: inherit;
-  font-family: inherit;
-  color: inherit;
-  cursor: pointer;
-  text-align: left;
-  width: 293px;
-  height: 19px;
-  left: 94px;
-  top: 94px;
-  font-family: 'Inter';
-  color: #B4B6C1;
-}
-
-.title{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
 .main-content{
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 30px;
+  padding: 75px;
   gap: 10px;
-  width: 800px;
+  width: 1000px;
   height: 672px;
   background: #FFFFFF;
   border-radius: 9px;
-  margin-left: 150px;
   /* Inside auto layout */
 
 }
 
+.card-container{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* position: absolute; */
+    margin-left: 200px;
+    margin-right: 10px;
+    justify-items: center;
+    align-items: center;
+    width: 10px;
+    height: 30px;
+}
 
-tr,td, th{
-  justify-content: space-between;
+.row{
   width: 10px;
-  margin-right: 1px;
 }
 
-.wrapper {
-display: flex;
-align-items: center;
-height: 50px;
-width: 50px;
-}
-.title, button {
-display: inline-block;
-}
 
-.title {
-margin-right: 600px;
-}
 
-.table{
-padding-right: 30px;
-width: 800px;
-position: absolute;
-margin-left: 200px;
-}
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
+
+
+
+
 
 

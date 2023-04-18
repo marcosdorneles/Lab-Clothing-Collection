@@ -10,6 +10,7 @@ import { ModelosServiceService } from 'src/services/modelos-service.service';
 })
 export class ModelosComponent {
 
+
 modelos!: Modelos[];
 
 ngOnInit(){
@@ -32,6 +33,10 @@ ngOnInit(){
 
   goToCriarModelos(){
     this.route.navigate(['/criarModelos'])
+  }
+
+  editModelo(id: number){
+    this.route.navigate([''])
   }
 constructor(private service: ModelosServiceService, private route: Router){}
 }

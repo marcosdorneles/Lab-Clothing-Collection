@@ -6,10 +6,9 @@ import { ColecoesServiceService } from 'src/services/colecoes-service.service';
 @Component({
   selector: 'app-colecoes',
   templateUrl: './colecoes.component.html',
-  styleUrls: ['./colecoes.component.scss']
+  styleUrls: ['./colecoes.component.scss'],
 })
 export class ColecoesComponent {
-
   colecoes!: Colecoes[];
 
   ngOnInit() {
@@ -18,21 +17,13 @@ export class ColecoesComponent {
     });
   }
 
-  goToDashboard(){
-    this.route.navigate(['/dashboard'])
+  goToCriarColecoes() {
+    this.route.navigate(['/criarColecoes']);
   }
 
-  goToColecoes(){
-    this.route.navigate(['/colecoes'])
+  editColecao(id: number) {
+    this.route.navigate(['editaColecoes', id]);
   }
 
-  goToModelos(){
-    this.route.navigate(['/modelos'])
-  }
-
-  goToCriarColecoes(){
-    this.route.navigate(['/criarColecoes'])
-  }
-
-  constructor(private service: ColecoesServiceService, private route: Router){}
+  constructor(private service: ColecoesServiceService, private route: Router) {}
 }

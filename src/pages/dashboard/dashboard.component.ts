@@ -15,9 +15,6 @@ export class DashboardComponent {
   colecoes!: Colecoes[];
 
   ngOnInit(): void {
-  }
-
-  listarColecoes() {
     this.service.getColecoes().subscribe((data: Colecoes[]) => {
       this.colecoes = data;
     });

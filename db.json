@@ -1,52 +1,20 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "email": "emailmarcos@teste.com",
-      "password": "senhadomarcosteste",
-      "cnpj": "12345678",
-      "empresa": "empresa Ltda.",
-      "nome": "marcos"
-    },
-    {
-      "nome": "teste",
-      "empresa": "teste",
-      "cnpj": "teste",
-      "email": "teste",
-      "password": "teste",
-      "id": 2
-    },
-    {
-      "nome": "Marcos",
-      "empresa": "empresa teste",
-      "cnpj": "12345678123456",
-      "email": "marcos@email.com",
-      "password": "",
-      "id": 3
-    },
-    {
-      "nome": "marcos",
-      "empresa": "empresa",
-      "cnpj": "12345678912345",
-      "email": "teste@gmail.com",
-      "password": "teste",
-      "id": 4
-    },
-    {
-      "nome": "Marcos",
-      "empresa": "Empresa teste",
-      "cnpj": "12345123451223",
-      "email": "marcos@gmail.com",
-      "password": "senhateste",
-      "id": 5
-    },
-    {
       "nome": "Marcos Guilherme Dorneles Staub",
       "empresa": "empresa",
       "cnpj": "12345123451234",
       "email": "marcos@gmail.com",
       "password": "senhateste",
-      "id": 6
+      "id": 1
+    },
+    {
+      "nome": "Marcos",
+      "empresa": "Empresa teste",
+      "cnpj": "12345123451245",
+      "email": "marcos@gmail.com",
+      "password": "senhateste",
+      "id": 2
     }
   ],
   "modelos": [

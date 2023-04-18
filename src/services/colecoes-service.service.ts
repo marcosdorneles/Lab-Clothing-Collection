@@ -11,7 +11,7 @@ export class ColecoesServiceService {
 
   
   getColecoes():Observable<Colecoes[]>{
-    return this.httpClient.get<Colecoes[]>(`${API_PATH}/colecoes`)
+    return this.httpClient.get<Colecoes[]>(`${API_PATH}/colecoes/listColecoes`)
   }
 
   getColecao(id: string):Observable<any>{

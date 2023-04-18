@@ -12,7 +12,7 @@ export class ModelosServiceService {
   constructor(private httpClient: HttpClient) { }
 
   getModelos():Observable<Modelos[]>{
-    return this.httpClient.get<Modelos[]>(`${API_PATH}/modelos`)
+    return this.httpClient.get<Modelos[]>(`${API_PATH}/modelos/listModelos`)
   }
 
   getModelo(id: string):Observable<any>{

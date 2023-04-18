@@ -1,10 +1,8 @@
-.conteiner{
-    /* Auto layout */
-    margin-top: 15px;
-    margin-left: 300px;
-    background: #F9F9F9;
-}  
-
+.conteiner {
+  margin-top: 15px;
+  margin-left: 300px;
+  background: #f9f9f9;
+}
 .row {
   display: flex;
   flex-direction: column;
@@ -18,133 +16,86 @@
   border-right: 2.5px solid #f0f0f0;
 }
 
-.menu-titulo {
-  width: 300px;
-  height: 17px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-//   color: #b4b6c1;
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
-
-.nav-item {
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  width: 293px;
+  height: 19px;
+  left: 94px;
+  top: 94px;
+  font-family: "Inter";
+  color: #b4b6c1;
+}
+.title {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 0px 20px;
-  gap: 10px;
-  width: 200px;
-  height: 50px;
-  border-radius: 7px;
-  /* Inside auto layout */
+  padding: 0px;
   flex: none;
-  order: 1;
+  order: 0;
   align-self: stretch;
   flex-grow: 0;
-  overflow: hidden;
 }
 
-.nav-item:hover {
-  color: white;
-  background: #4c68ff;
-  overflow: hidden;
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 10px;
+  width: 1350px;
+  height: 672px;
+  background: #ffffff;
+  border-radius: 9px;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-button{
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font-size: inherit;
-    font-family: inherit;
-    color: inherit;
-    cursor: pointer;
-    text-align: left;
-    width: 293px;
-    height: 19px;
-    left: 94px;
-    top: 94px;
-    font-family: 'Inter';
-    color: #B4B6C1;
-}
-
-.title{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.main-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 30px;
-    gap: 10px;
-    width: 1350px;
-    height: 672px;
-    background: #FFFFFF;
-    border-radius: 9px;
-    /* Inside auto layout */
-
-}
-
-
-tr,td, th{
-    justify-content: space-between;
-    width: 10px;
-    margin-right: 1px;
+tr,td,th {
+  justify-content: space-between;
+  width: 10px;
+  margin-right: 1px;
 }
 
 .wrapper {
-    display: inline-block;
-  }
-
-.h1-conteiner{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 28px;
-color: #2C2C2C;
+  display: inline-block;
 }
 
-.form-container{
-width: 1120px;
-height: 400px;
+.h1-conteiner {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  margin: auto;
+  background: #ffffff;
 
-background: #FFFFFF;
-border-radius: 10px;
+}
 
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 1;
+.form-container {
+  width: 1120px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
 }
 .container {
   justify-content: center;
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #F2F5FF;;
+  background-color: #f2f5ff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,7 +105,7 @@ flex-grow: 1;
 }
 
 form {
-  background-color: #FFFF;
+  background-color: #ffff;
   padding: 60px 60px 100px 60px;
   border-radius: 5px;
 }
@@ -167,14 +118,12 @@ input {
   margin-bottom: 10px;
   width: 5000px;
   height: 43px;
-  
-  border: 1px solid #EBF0FA;
+  border: 1px solid #ebf0fa;
   border-radius: 6px;
 }
 
 input:focus {
-  border-color: #B4B6C1;
-  
+  border-color: #b4b6c1;
 }
 
 .column {
@@ -188,18 +137,41 @@ input:focus {
   border-right: 100px;
 }
 
-.form{
+.form {
   padding: 78px 320px 125px 56px;
   float: left;
   margin-left: -300px;
   border-top: -10px;
+
 }
 
-.icones{
+.icones {
   margin-left: 250px;
   margin-top: 30px;
 }
-.buttons{
+.buttons {
   margin-top: 30px;
   margin-left: 350px;
+}
+
+.cancelar {
+  padding: 14px;
+  gap: 10px;
+  width: 180px;
+  height: 50px;
+  margin-right: 50px;
+  text-align: center;
+  background: #ebebeb;
+  border-radius: 6px;
+}
+
+.criar {
+  justify-content: center;
+  padding: 14px;
+  gap: 10px;
+  width: 180px;
+  height: 50px;
+  background: #0073cf;
+  border-radius: 6px;
+  text-align: center;
 }

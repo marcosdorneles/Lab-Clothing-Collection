@@ -1,40 +1,38 @@
 svg {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .dropdown-toggle svg {
-    width: 30px;
-    height: 30px;
-  }
-  .navbar-nav li {
-    margin-right: 20px;
-  }
-  
-  .dropdown-menu svg {
-    background-color: transparent;
-  }
+  width: 20px;
+  height: 20px;
+}
 
+.dropdown-toggle svg {
+  width: 30px;
+  height: 30px;
+}
+.navbar-nav li {
+  margin-right: 20px;
+}
 
-.dropdown-menu{
-padding: 16px;
-width: 192px;
-height: 168px;
-background: #FFFFFF;
-border: 1px solid #E6E7EB;
-box-shadow: 8px 16px 40px -15px rgba(38, 50, 56, 0.25);
-border-radius: 8px;
-left: -150px;
+.dropdown-menu svg {
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  padding: 16px;
+  width: 192px;
+  height: 168px;
+  background: #ffffff;
+  border: 1px solid #e6e7eb;
+  box-shadow: 8px 16px 40px -15px rgba(38, 50, 56, 0.25);
+  border-radius: 8px;
+  left: -150px;
 }
 
 button {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-  }
-
-li{
-    margin-bottom: 15px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
-  
+
+li {
+  margin-bottom: 15px;
+}

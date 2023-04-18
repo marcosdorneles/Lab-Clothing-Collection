@@ -13,12 +13,12 @@ import { RecuperarSenhaComponent } from 'src/pages/recuperar-senha/recuperar-sen
 import { DashboardCardComponent } from 'src/components/dashboard-card/dashboard-card.component';
 import { HeaderComponent } from 'src/components/header/header.component';
 import { DashboardComponent } from 'src/pages/dashboard/dashboard.component';
-import { SideMenuComponent } from 'src/components/side-menu/side-menu.component'
+import { SideMenuComponent } from 'src/components/side-menu/side-menu.component';
 import { ColecoesComponent } from 'src/pages/colecoes/colecoes.component';
 import { CriarColecoesComponent } from 'src/pages/criar-colecoes/criar-colecoes.component';
 import { ModelosComponent } from 'src/pages/modelos/modelos.component';
 import { CriarModelosComponent } from 'src/pages/criar-modelos/criar-modelos.component';
-
+import { EditaColecoesComponent } from 'src/pages/edita-colecoes/edita-colecoes.component';
 
 @NgModule({
   declarations: [
@@ -33,18 +33,17 @@ import { CriarModelosComponent } from 'src/pages/criar-modelos/criar-modelos.com
     ColecoesComponent,
     CriarColecoesComponent,
     ModelosComponent,
-    CriarModelosComponent
-  
+    CriarModelosComponent,
+    EditaColecoesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
-
+    BrowserAnimationsModule,
   ],
   providers: [AuthGuard],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

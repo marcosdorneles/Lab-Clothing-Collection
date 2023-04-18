@@ -12,51 +12,48 @@ import { LoginComponent } from 'src/pages/login/login.component';
 import { ModelosComponent } from 'src/pages/modelos/modelos.component';
 import { RecuperarSenhaComponent } from 'src/pages/recuperar-senha/recuperar-senha.component';
 import { AuthGuard } from 'src/security/AuthGuard';
+import { EditaColecoesComponent } from 'src/pages/edita-colecoes/edita-colecoes.component';
+import { EditaModelosComponent } from 'src/pages/edita-modelos/edita-modelos.component';
 
 const routes: Routes = [
   {
-    path:'', component: LoginComponent
+    path: '', component: LoginComponent
   },
   {
-    path:'dashboard',
-    component: DashboardComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path:'forgotPassword',
+    path: 'forgotPassword',
     component: RecuperarSenhaComponent
   },
   {
-    path:'cadastro',
-    component:CadastroComponent
+    path: 'cadastro',
+    component: CadastroComponent
   },
   {
-    path:'dashboardCard',
-    component:DashboardCardComponent
+    path: 'dashboard',
+    component: DashboardComponent,
   },
   {
-    path:'sideMenu',
-    component:SideMenuComponent
+    path: 'colecoes',
+    component: ColecoesComponent
   },
   {
-    path:'header',
-    component:HeaderComponent
+    path: 'criarColecoes',
+    component: CriarColecoesComponent
   },
   {
-    path:'colecoes',
-    component:ColecoesComponent
+    path: 'modelos',
+    component: ModelosComponent
   },
   {
-    path:'criarColecoes',
-    component:CriarColecoesComponent
+    path: 'criarModelos',
+    component: CriarModelosComponent
   },
   {
-    path:'modelos',
-    component:ModelosComponent
+    path: 'editaColecoes/:id',
+    component: EditaColecoesComponent
   },
   {
-    path:'criarModelos',
-    component:CriarModelosComponent
+    path: 'editaModelos/:id',
+    component: EditaModelosComponent
   }
 
 ];

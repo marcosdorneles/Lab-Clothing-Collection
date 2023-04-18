@@ -38,13 +38,13 @@
       </div>
 
       <div class="form-floating">
-        <input type="password" formControlName="password" placeholder="informe sua senha" />
+        <input type="password" formControlName="senha" placeholder="informe sua senha" />
       </div>
       <div
         *ngIf="
-          loginUser.get('password')?.errors &&
-          (loginUser.get('password')?.touched ||
-            loginUser.get('password')?.dirty)
+          loginUser.get('senha')?.errors &&
+          (loginUser.get('senha')?.touched ||
+            loginUser.get('senha')?.dirty)
         "
       >
         <p style="color: red">Informe uma senha válida!</p>

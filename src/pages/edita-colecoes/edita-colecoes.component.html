@@ -1,0 +1,51 @@
+<app-header></app-header>
+<aside class="side-menu">
+  <app-side-menu></app-side-menu>
+</aside>
+  
+  <div class="conteiner">
+    <h1 class="h1-conteiner">Editar Coleção</h1>
+    <div class="form-container">
+        <form [formGroup]="colecaoAtualizada">
+            <div class="text-center">
+            </div>
+            <div class="column">
+              <div class="form-floating">
+                <input type="text" formControlName="nome" placeholder="Nome da Coleção" />
+                <p *ngIf=""></p>
+              </div>
+
+              <div class="form-floating">
+                <input type="text" formControlName="estacao" placeholder="Para qual estação?" />
+                <p *ngIf></p>
+              </div>
+
+              <div class="form-floating">
+                <input type="text" formControlName="orcamento" placeholder="Qual é o orçamento para a coleção?" />
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="form-floating">
+                <input type="text" formControlName="responsavel" placeholder="Responsável pela coleção" />
+              </div>
+
+              <div class="form-floating">
+                <input type="text" formControlName="marca" placeholder="Para qual marca você está criando?" />
+              </div>
+
+              <div class="form-floating">
+                <input type="text" formControlName="anoLancamento" placeholder="Ano de lançamento" />
+              </div>
+
+            </div>
+            <div class="icones">
+              <img src="assets/cria-colecoes-bg.png" alt="" />
+            </div>
+            <div class="buttons">
+              <button class="cancelar" (click)="goToColecoes()">Cancelar</button>
+              <button class="criar" (click)="editaColecao()">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>

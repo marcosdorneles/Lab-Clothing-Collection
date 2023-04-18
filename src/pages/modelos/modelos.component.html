@@ -27,14 +27,12 @@
                   <th scope="col">Coleção</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <tr *ngFor="let modelo of modelos">
+              <tbody *ngFor="let modelo of modelos">
+                <tr (click)="modelo.id ? editModelo(modelo.id) : null">
                       <td >{{ modelo.id }}</td>
                       <td >{{ modelo.nome }}</td>
                       <td >{{ modelo.responsavel }}</td>
                       <td >{{ modelo.colecao }}</td>
-                </tr>
               </tbody>
             </table>
       </div>

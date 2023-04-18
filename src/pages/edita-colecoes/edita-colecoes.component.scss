@@ -5,6 +5,20 @@
     background: #F9F9F9;
 }  
 
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 51px 40px;
+  gap: 40px;
+  position: absolute;
+  width: 250px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 2.5px solid #f0f0f0;
+}
+
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -13,9 +27,21 @@ table {
 button{
     background: none;
     border: none;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+    width: 293px;
+    height: 19px;
+    left: 94px;
+    top: 94px;
     font-family: 'Inter';
     color: #B4B6C1;
 }
+
 
 .main-content{
     display: flex;
@@ -128,7 +154,6 @@ input:focus {
   margin-top: 30px;
   margin-left: 350px;
 }
-
 .cancelar {
   padding: 14px;
   gap: 10px;
